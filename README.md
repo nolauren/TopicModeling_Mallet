@@ -1,4 +1,4 @@
-# TopicModeling_Mallet
+# Topic Modeling with Mallet
 
 
 #Not Enough Memory
