@@ -6,7 +6,7 @@
 Depending on how large your files are, you might get an error that says you do not have enough memory. 
 To address this issue, you can do one of the following:
 
-1. Outside of the Terminal
+##Outside the Terminal
 
 Go to the folder ~/Downloads/mallet-2.0.7/bin/
 
@@ -22,7 +22,7 @@ to set it to 1g fewer than ram/memory on your machine. You can check your memory
 by going to the Apple on the top left of your computer and choosing "About This Mac."
 Look at "Memory."  In my case, my machine has 8GB. I will change to MEMORY=7g.
 
-2. Inside the Terminal
+##Inside the Terminal
 
 Go to the directory mallet2.0.7/bin/
 
@@ -70,7 +70,7 @@ with
 
 ````
 
-so not it is
+so the code now is
 
 ```
 bin/mallet import-dir --input AQ/ --output texts.mallet 
@@ -94,13 +94,15 @@ bin/mallet import-dir --input AQ/ --output texts.mallet
 --token-regex '\p{L}[\p{L}\p{P}]*\p{L}' --keep-sequence --stoplist-file stoplists/en.txt
 ```
 
-Let's say I name it laurencustomstoplist.txt. Then I will use:
+Let's say I now want to use a custom list. I have named  it laurencustomstoplist.txt. 
+Then I will use:
 
 ```
 --stoplist-file stoplists/laurencustomstoplist.txt
 ```
-
+in 
 ```
 bin/mallet import-dir --input AQ/ --output texts.mallet 
 --token-regex '\p{L}[\p{L}\p{P}]*\p{L}' --keep-sequence --stoplist-file stoplists/laurencustomstoplist.txt
 ```
+Now, I'm using my custom list! 
